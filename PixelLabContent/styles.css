@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Press Start 2P', sans-serif;
+}
+html {
+	width: 100%;
+	height: 100%;
+  	scrollbar-color: #b40008 #222;
+}
+html::-webkit-scrollbar {
+  width: 32px;
+}
+
+
+body {
+	background-color: #0F0F0F;
+	color:  #999999;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+hr {
+	background-color: #b40008;
+	height: 6px;
+	width: 89%;
+	margin: 60px auto 60px;
+	border: 3px solid #b40008;
+}
+
+#start {
+	width: 100%;
+	height: 100%;
+	background-color: #0F0F0F;
+	position: fixed;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
+}
+.start {
+	font-size: 3em;
+}
+#startButton {
+	background-color: #222;
+	border: none;
+	width: 230px;
+	height: 50px;
+	font-size: 2em;
+	position: relative;
+	color: #FF3B3B;
+	overflow: hidden;
+
+}
+#startButton:hover {
+	transform: scale(1.1);
+	background-color: #444;
+}
+
+#startButton:active {
+	animation: shake 0.1s alternate;
+	background-color: #222;
+	color: #900000;
+}
+#startButton::before {
+	content: "";
+	width: 6px;
+	height: 100%;
+	position: absolute;
+	background-color: #555;
+	animation: buttonS 6s infinite linear;
+	opacity: 0.5;
+	top: 0px;
+}
+#carge {
+	display: none;
+	position: relative;
+}
+#span1, #span2 {
+	width: 40px;
+	height: 40px;
+	background-color: #900000;
+	position: absolute;
+	opacity: 0.8;
+}
+#span1 {
+	left: 10%;
+	top: 20%;
+	animation: spans 7s infinite alternate;
+}
+#span2 {
+	left: 90%;
+	top: 80%;
+	animation: spans 7s infinite alternate-reverse;
+}
+
+@keyframes spans {
+	1% {
+		top: 20%;
+	}
+	50% {
+		top: 80%;
+	}
+	100% {
+		top: 20%;
+	}
+}
+/* página en sí */
+h1 {
+	color: #FF3B3B;
+	font-size: 2.5em;
+}
+h2 {
+	margin: 0 20%;
+	text-align: center;
+	line-height: 2;
+	font-size: 0.9em;
+}
+main {
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+main .gif {
+	width: 125px;
+	height: 125px;
+}
+#games {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 60px;
+	gap: 70px;
+}
+#soon {
+	min-width: 256px;
+	height: 256px;
+	background-color: #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.soon {
+	width: 80%;
+	justify-content: space-around;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 0.9em;
+	line-height: 2;
+}
+
+.game {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 40px;
+	gap: 15px;
+}
+.sec {
+	flex-direction: column-reverse;
+}
+
+.container {
+	gap: 20px;
+}
+@media screen and (min-width: 650px) {
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 1.7em;
+}
+.game {
+	flex-direction: row;
+	max-width: 80%;
+	gap: 20px;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.left:hover {
+	border-right: 3px solid #da0021;
+}
+.right:hover {
+	border-left: 3px solid #da0021;
+}
+main .gif {
+	width: 200px;
+	height: 200px;
+}
+
+#info p {
+	font-size: 1em;
+}
+}
+
+img {
+	transition: 0.1s;
+}
+img:hover {
+	animation: shake 0.1s alternate;
+	filter: brightness(1.2);
+}
+
+
+#info {
+	display: none;
+	align-items: center;
+    flex-direction: column;
+}
+#info p {
+	max-width: 70%;
+	font-size: 0.8em;
+}
+
+footer {
+	margin-top: 60px;
+    height: 100px;
+    background-color: #6f0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    padding: 15px;
+}
+
+body::before, body::after {
+	content: "";
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background-color: #900000;
+	animation: motion 7s infinite alternate;
+	position: fixed;
+	top: 70%;
+	z-index: -1;
+}
+body::after {
+	animation: motion2 5s infinite alternate-reverse;
+	top: 30%;
+}
+
+main::before {
+	content: "";
+	width: 100%;
+	height: 8px;
+	position: absolute;
+	background-color: #900000;
+	animation: scan 7s infinite alternate;
+	position: fixed;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+
+@keyframes motion {
+	0% {
+		top: 70%;
+		left: 10%;
+		background-color: #0F0F0F;}
+	37% {
+		top: 70%;
+	}
+	38% {
+		top: 65%;
+		background-color: #900000;
+	}
+	40% {
+		background-color: #ff3b3b;
+		top: 75%;
+	}
+	41% {
+		top: 70%;
+		background-color: #b40008;
+	}
+	100% {left: 80%;
+	background-color: #0F0F0F;}
+
+}
+@keyframes motion2 {
+
+		0% {
+		top: 30%;
+		left: 20%;
+		background-color: #0F0F0F;}
+	37% {
+		top: 30%;
+	}
+	38% {
+		top: 25%;
+		background-color: #900000;
+	}
+	40% {
+		background-color: #ff3b3b;
+		top: 35%;
+	}
+	41% {
+		top: 30%;
+		background-color: #b40008;
+	}
+	100% {
+		left: 70%;
+		background-color: #0F0F0F;
+	}
+
+}
+
+h1:active {
+	animation: shake 0.1s alternate;
+}
+
+strong {
+	color: #7778;
+	font-size: 0.3em;
+}
+@keyframes shake {
+	25% {
+		transform: rotate(25deg);
+	}
+	75% {
+		transform: rotate(-25deg);
+	}
+
+}
+
+@keyframes scan {
+	1% {
+		top: 100%;
+	}
+	100% {
+		top: 0%;
+	}
+
+}
+
+.scanlines {
+  pointer-events: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  z-index: 1;
+}
+
+
+@keyframes buttonS {
+	1% {
+		left: 0%;
+	}
+	80% {
+		left: 110%;
+	}
+	100% {
+		left: 111%;
+	}
+}
+
+.details {
+	   display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.details p {
+	min-width: 200px;
+}
+
+.petContainer {
+	display: flex;
+}
+.details-container {
+	border-left: 3px solid #da0021;
+	padding-left: 10px;
+}
+.details-container:hover {
+	border-left: 20px solid #ff1c3f;
+	padding-left: 20px;
+	color: #ddd;
+}
+.updates {
+	   display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+}
+.containerUp {
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+	max-width: 50%;
+	min-width: 350px;
+}
+.updateH3{
+	font-size: 0.9em;
+	line-height: 1.2;
+}
+li {
+	font-size: 0.7em;
+	line-height: 1.5;
+}
+
+
+.gif {
+	transition: none;
+}
+
+.gif:active {
+	transform: scale(1.1);
+}

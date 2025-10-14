@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="PixelLabContent/styles.css">
+	<meta name="author" content="PixelLab">
+    <meta name="description" content="Sección Principal de PixelLab">
+	<link rel="icon" href="PixelLabContent/img/pet.png" type="image/x-icon">
+	<title>PixelLab</title>
+</head>
+<body>
+	<div class="scanlines"></div>
+	<div id="start">
+		<h2 class="start">PixelLab</h2>
+		<button id="startButton">Start</button>
+		<h3 id="carge">Cargando...</h3>
+		<span id="span1"></span>
+		<span id="span2"></span>
+	</div>
+	<main>
+		<div>
+			<img src="PixelLabContent/img/person.gif" class="gif" width="200px" height="200px">
+			<img src="PixelLabContent/img/pet.gif" class="gif" width="200px" height="200px">
+		</div>
+		<h1>PixelLab<strong>v1.0</strong></h1>
+		<h2>Sección de minijuegos variados, incluyendo de lógica, aletoriedad y reacción, con un estilo de animación retro para los fanáticos del pixel art.</h2>
+	</main>
+
+	<hr>
+	<section id="games">
+		<div class="game">
+			<a href="Paper\index.html" class="left">
+				<img title="Click para jugar" src="PixelLabContent/img/tijera.png">
+			</a>
+			<div class="container">
+				<h3>Piedra, papel o tijeras</h3>
+				<p>El juego clásico de piedra, papel o tijeras, simplemente elige una de las tres opciones y observa los resultados en la pantalla.</p>
+			</div>
+		</div>
+		<div class="game sec">
+			<div class="container">
+				<h3>Tres en raya</h3>
+				<p>Se puede jugar tanto con un amigo, como contra un bot, puedes elegir si usar la X o el O, al colocar 3 formas en línea verás el ganador.</p>
+			</div>
+			<a href="TicTac/index.html">
+				<img title="Click para jugar" src="PixelLabContent/img/tresEnRaya.png" class="right">
+			</a>
+		</div>
+		<div class="game">
+			<a href="whack/index.html">
+				<img title="Click para jugar" src="PixelLabContent/img/mole.png" class="left">
+			</a>
+			<div class="container">
+				<h3>Whack-A-Mole</h3>
+				<p>Aplasta los topos que aparecen en el transcurso del tiempo, tienes 1 minuto para obtener el mejor puntaje.</p>
+			</div>
+		</div>
+		<div class="game sec soon">
+			<div class="container">
+				<h3>Más mini-juegos<br>próximamente</h3>
+				<p>...</p>
+			</div>
+			<div id="soon">
+				<img src="PixelLabContent/img/soon.gif" width="200px" height="200px">
+			</div>
+		</div>
+			
+	</section>
+
+<hr>
+	<section id="info">
+		<h2>Acerca de</h2>
+		<div class="details">
+			<img src="PixelLabContent/img/person.gif" class="gif" width="200px" height="200px">
+			<p>Cada mini-juego se desarrolló utilizando HTML, CSS y JavaScript Vanilla, omitiendo el uso de frameworks o librerías externas.<br>El objetivo de este Mini Game Hub es aprender habilidades como manipulación del DOM, manejo de eventos, uso de canvas, detección de colisiones y reproducción de audio, todo enmarcado en un estilo visual pixel art retro, para hacerlo de un modo creativo, llamativo y divertido, tanto para el desarrollador como para los visitantes del sitio.</p>
+		</div>
+	</section>
+
+	<hr>
+
+	<section id="update">
+		<h2>Updates</h2>
+		<div class="updates">
+			<div class="containerUp">
+				<div class="details-container">
+					<h3 class="updateH3">14/10/2025 - ¡PixelLab te da la bienvenida!</h3>
+					<ul style="list-style: none;">
+						<li>- Diseño y ambientación pixel art retro</li>
+						<li>- Avatar y mascota integrados</li>
+						<li>- 3 mini-juegos disponibles</li>
+						<li>- API de audio implementada</li>
+					</ul>
+					
+				</div>
+			</div>
+			<img src="PixelLabContent/img/pet.gif" class="gif" width="200px" height="200px">
+		</div>
+			
+			
+		
+	</section>
+
+
+
+	<footer>
+		© PixelLab - Código puro para cada mini-juego
+	</footer>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
