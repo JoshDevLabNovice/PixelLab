@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="author" content="PixelLab">
+    <meta name="description" content="Tres en raya simple, creado por PixelLab">
+	<title>Tres en raya</title>
+	<link rel="icon" href="img/pet.png" type="image/x-icon">
+</head>
+<body>
+		<div class="ventana" id="ventana1">
+			<h2>¡Bienvenido!</h2>
+			<p>Elija una opción</p>
+			<span>
+				<button class="personaje" id="pX"></button>
+				<button class="personaje" id="pO"></button>
+			</span>
+		</div>
+
+		<div class="ventana" id="ventana2">
+			<p>Elija una acción</p>
+			<span id="spanP">
+				<button class="modo" id="1v1">Contra un Amigo</button>
+				<button class="modo" id="1vCPU">Contra el CPU</button>
+			</span>
+		</div>
+	<main>
+		<h1>Tres En Raya</h1>
+	</main>
+	<section id="fondo">
+		<div class="container">
+			<span class="casilla" id="c1"></span>
+			<span class="casilla" id="c2"></span>
+			<span class="casilla" id="c3"></span>
+		</div>
+		<div class="container">
+			<span class="casilla" id="c4" ></span>
+			<span class="casilla" id="c5"></span>
+			<span class="casilla" id="c6"></span>
+
+		</div>
+		<div class="container">
+			<span class="casilla" id="c7"></span>
+			<span class="casilla" id="c8"></span>
+			<span class="casilla" id="c9"></span>
+		</div>
+	</section>
+	<section id="resultados">
+		<h3 id="h3">El ganador es:</h3>
+		<h4 id="h4"></h4>
+		<button id="button">Jugar de nuevo</button>
+	</section>
+	<footer>
+		© PixelLab - Código puro para cada mini-juego
+
+	</footer>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

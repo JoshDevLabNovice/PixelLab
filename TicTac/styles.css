@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	font-family:'Press Start 2P', sans-serif;
+	box-sizing: border-box;
+}
+
+html {
+	width: 100vw;
+	height: 100vh;
+}
+body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #feeeab;
+	color: #f8853e;
+}
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	width: 300px;
+	height: 100px;
+	display: flex;
+}
+#fondo {
+background: url(img/fondo.png) no-repeat center center;
+background-size: cover;
+}
+
+.casilla {
+	width: 100px;
+	height: 100px;
+	background-color: transparent;
+	border: transparent;
+	font-size: 110px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+img {
+	max-width: 20px;
+	max-height: 20px;
+}
+.casilla img {
+	max-width: 90px;
+	max-height: 90px;
+}
+
+#resultados * {
+	margin: 10px;
+}
+#resultados image {
+	margin: auto;
+}
+button {
+	border: none;
+	outline: none;
+	height: 40px;
+	background-color: #fcc47f;
+	color: #f8853e;
+}
+button:hover {
+	background-color: #fdd995;
+}
+button:active {
+	background-color: #faaf6a;
+}
+#button {
+	width: 260px;
+}
+footer {
+	text-align: center;
+}
+
+.ventana {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background-color: #aaaa;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.ventana * {
+	margin: 10px 5px;
+}
+#ventana2 {
+	display: none;
+}
+.modo {
+	padding: 10px;
+}
+
+#pX, #pO {
+	width: 100px;
+	height: 100px;
+	border: 6px solid #333;
+	padding: 10px;
+}
+#pO {
+	background: url(img/o.png) center / cover no-repeat;
+}
+#pX {
+	background: url(img/x.png) center / cover no-repeat;
+}
+
+
+#pX:hover, #pO:hover {
+	width: 110px;
+	height: 110px;
+}
+
+#pX:active, #pO:active {
+	width: 95px;
+	height: 95px;
+}
+
+h2 {
+	height: 60px;
+}
+h1, h3, h4 {
+	text-align: center;
+}
+#spanP{
+	display: flex;
+}

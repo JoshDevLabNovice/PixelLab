@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* créditos de la fuente a quien corresponda */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Press Start 2P', sans-serif;
+}
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #f6edd9;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	cursor: url('img/maze.png'), auto;
+	justify-content: space-between;
+	
+}
+
+main {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+	padding: 15px;
+}
+
+main h2 {
+	padding: 10px;
+}
+
+
+#data {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+button {
+	width: 150px;
+	height: 25px;
+	border: none;
+    outline: none;
+    color: #4b2f07;
+    background: #ffd786;
+}
+#data span {
+	text-align: center;
+	display: flex;
+	gap: 20px;
+}
+
+section {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.table {
+	width: 600px;
+	height: 300px;
+	position: relative;
+	background-image: url('img/tierra.png');
+	background-size: 300px 150px;
+	z-index: 1;
+}
+.table::after {
+	content: "";
+	width: 600px;
+	height: 150px;
+	position: absolute;
+	background-image: url('img/grass.png');
+	  background-repeat: repeat;
+  background-size: 300px 150px;
+  	z-index: 100;
+}
+
+.topo {
+    background-image: url('img/mole.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 130px;
+    position: absolute;
+}
+
+#topo1 {
+	left: 25px;
+}
+#topo2 {
+	left: 225px;
+}
+
+#topo3 {
+	left: 425px;
+	
+}
+
+@keyframes animacion {
+	10% {
+		margin-top: -15px;
+	}
+		25% {
+		margin-top: -55px;
+	}
+		50% {
+		margin-top: -90px;
+	}
+		75% {
+		margin-top: -55px;
+	}
+		90% {
+		margin-top: -20px;
+	}
+		100% {
+		margin-top: 0px;
+	}
+}
+#cubierta {
+	color: #eee;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #542c;
+	position: absolute;
+	gap: 25px;
+	z-index: 10000;
+}
+
+h2 {
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+
+	.table {
+		width: 390px;
+		height: 195px;
+		background-size: 195px 98px;
+	}
+	.table::after {
+		width: 390px;
+		height: 98px;
+		background-size: 195px 98px;
+	}
+	.topo {
+		width: 98px;
+		height: 85px;
+	}
+	#topo1 {
+	left: 16.25px;
+}
+	#topo2 {
+	left: 146.25px;
+}
+
+	#topo3 {
+	left: 276.25px;
+	
+}
+	h1 {
+	font-size: 25px;
+}
+
+main h2 {
+	font-size: 20px;
+}
+#data span {
+	font-size: 13px;
+	gap: 10px;
+}
+}
+@keyframes animacion2 {
+		10% {
+		margin-top: -9.75px;
+	}
+		25% {
+		margin-top: -35.75px;
+	}
+		50% {
+		margin-top: -58.5px;
+	}
+		75% {
+		margin-top: -35.75px;
+	}
+		90% {
+		margin-top: -13px;
+	}
+		100% {
+		margin-top: 0px;
+	}
+}
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: #5f5847;
+	color: #eee;
+	padding: 20px 10px;
+}
