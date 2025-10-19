@@ -3,15 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="PixelLab">
-	<meta name="description" content="Juego simple de piedra papel o tijera con pixelArt">
+	<meta name="description" content="Juego simple de piedra papel o tijeras con pixelArt">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Piedra, papel o tijera</title>
+	<title>Piedra, papel o tijeras</title>
 	<link rel="icon" href="img/pet.png" type="image/x-icon">
 </head>
 <body>
 	<header>
-		<h1>¡Bienvenido al juego "Piedra, papel o tijera"!</h1>
+		<h1>Piedra, papel o tijeras<strong>v1.1.0</strong></h1>
 		<h2>Elija una opción para jugar</h2>
 	</header>
 
@@ -28,14 +28,21 @@
 	</div>
 	<div id="resultados">
 		<h2>Resultados</h2>
+		<div id="juego">
+			<div class="jugadores">
+				<img id="imgRes" src="">
+				<h4>Tu elección</h4>
+			</div>
+			<div class="jugadores">
+				<img id="imgBot" src="">
+				<h4>Elección del rival</h4>
+			</div>
+		</div>
 		<h4 id="h4">El resultado del juego aparecerá acá</h4>
 		<button id="bt">Volver a jugar</button>
 	</div>
 
 
-	<div class="footer">
-		<h3>¡Gracias por jugar! Esperamos regrese pronto :)</h3>
-	</div>
 
 	<footer>
 		© PixelLab - Código puro para cada mini-juego

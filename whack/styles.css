@@ -20,7 +20,7 @@ body {
 	flex-direction: column;
 	cursor: url('img/maze.png'), auto;
 	justify-content: space-between;
-	
+	color: #111;
 }
 
 main {
@@ -67,6 +67,7 @@ section {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
+	position: relative;
 }
 
 .table {
@@ -97,6 +98,19 @@ section {
     height: 130px;
     position: absolute;
 }
+  .particle {
+    position: absolute;
+    width: 150px;
+    height: 130px;
+    background: url('img/particles.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none; /* para que no bloqueen clics */
+    border-radius: 50%;
+    top: -60px;
+    display: none;
+  }
 
 #topo1 {
 	left: 25px;
@@ -112,19 +126,19 @@ section {
 
 @keyframes animacion {
 	10% {
-		margin-top: -15px;
+		margin-top: -20px;
 	}
 		25% {
-		margin-top: -55px;
+		margin-top: -60px;
 	}
 		50% {
-		margin-top: -90px;
+		margin-top: -95px;
 	}
 		75% {
-		margin-top: -55px;
+		margin-top: -60px;
 	}
 		90% {
-		margin-top: -20px;
+		margin-top: -25px;
 	}
 		100% {
 		margin-top: 0px;
@@ -147,9 +161,17 @@ section {
 h2 {
 	text-align: center;
 }
+canvas {
+		width: 600px;
+		height: 140px;
+	}
 
 @media (max-width: 600px) {
 
+	canvas {
+	width: 390px;
+	height: 77px;
+}
 	.table {
 		width: 390px;
 		height: 195px;
@@ -163,6 +185,11 @@ h2 {
 	.topo {
 		width: 98px;
 		height: 85px;
+	}
+	.particle {
+		width: 98px;
+		height: 85px;
+		top: -40px;
 	}
 	#topo1 {
 	left: 16.25px;
@@ -215,4 +242,26 @@ footer {
 	background-color: #5f5847;
 	color: #eee;
 	padding: 20px 10px;
+}
+
+#less {
+	position: absolute;
+	top: 20px;
+	color: #c41b1b;
+	display: none;
+}
+
+
+#resultados {
+	color: #31a833;
+	font-size: 4em;
+}
+
+#error {
+	color: #c41b1b;
+	font-size: 3em;
+}
+#version {
+	font-size: 0.5em;
+	color: #574b2d;
 }

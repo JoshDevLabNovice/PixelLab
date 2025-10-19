@@ -9,7 +9,8 @@
 html {
 	width: 100%;
 	height: 100%;
-  	scrollbar-color: #b40008 #222;
+  scrollbar-color: #b40008 #222;
+  scrollbar-width: none;
 }
 html::-webkit-scrollbar {
   width: 32px;
@@ -24,6 +25,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	overflow: auto;
+}
+body.no-scroll {
+  overflow: hidden;
 }
 hr {
 	background-color: #b40008;
@@ -65,7 +70,6 @@ hr {
 }
 
 #startButton:active {
-	animation: shake 0.1s alternate;
 	background-color: #222;
 	color: #900000;
 }
@@ -115,14 +119,16 @@ hr {
 /* página en sí */
 h1 {
 	color: #FF3B3B;
-	font-size: 2.5em;
+	font-size: 2.3em;
 }
 h2 {
 	margin: 0 20%;
 	text-align: center;
 	line-height: 2;
-	font-size: 0.9em;
 }
+	main h2 {
+		font-size: 0.9em;
+	}
 main {
     margin-top: 80px;
     width: 100%;
@@ -177,18 +183,25 @@ p {
 	margin: 0 40px;
 	gap: 15px;
 }
+.game h3 {
+	line-height: 1.4em;
+}
 .sec {
 	flex-direction: column-reverse;
 }
 
-.container {
-	gap: 20px;
+.container * {
+	padding: 20px 0;
+}
+
+.container p {
+	text-align: justify;
 }
 @media screen and (min-width: 650px) {
 h1 {
 	font-size: 3em;
 }
-h2 {
+h2, main h2{
 	font-size: 1.7em;
 }
 .game {
@@ -203,8 +216,14 @@ h2 {
 	flex-direction: column;
 }
 
+.left {
+	border-right: 3px solid #0F0F0F;
+}
 .left:hover {
 	border-right: 3px solid #da0021;
+}
+.right {
+	border-left: 3px solid #0F0F0F;
 }
 .right:hover {
 	border-left: 3px solid #da0021;
@@ -215,7 +234,7 @@ main .gif {
 }
 
 #info p {
-	font-size: 1em;
+	font-size: 1em !important;
 }
 }
 
@@ -223,7 +242,6 @@ img {
 	transition: 0.1s;
 }
 img:hover {
-	animation: shake 0.1s alternate;
 	filter: brightness(1.2);
 }
 
@@ -235,7 +253,8 @@ img:hover {
 }
 #info p {
 	max-width: 70%;
-	font-size: 0.8em;
+	font-size: 0.7em;
+	text-align: justify;
 }
 
 footer {
@@ -250,21 +269,7 @@ footer {
     padding: 15px;
 }
 
-body::before, body::after {
-	content: "";
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	background-color: #900000;
-	animation: motion 7s infinite alternate;
-	position: fixed;
-	top: 70%;
-	z-index: -1;
-}
-body::after {
-	animation: motion2 5s infinite alternate-reverse;
-	top: 30%;
-}
+
 
 main::before {
 	content: "";
@@ -279,75 +284,16 @@ main::before {
 }
 
 
-@keyframes motion {
-	0% {
-		top: 70%;
-		left: 10%;
-		background-color: #0F0F0F;}
-	37% {
-		top: 70%;
-	}
-	38% {
-		top: 65%;
-		background-color: #900000;
-	}
-	40% {
-		background-color: #ff3b3b;
-		top: 75%;
-	}
-	41% {
-		top: 70%;
-		background-color: #b40008;
-	}
-	100% {left: 80%;
-	background-color: #0F0F0F;}
 
-}
-@keyframes motion2 {
-
-		0% {
-		top: 30%;
-		left: 20%;
-		background-color: #0F0F0F;}
-	37% {
-		top: 30%;
-	}
-	38% {
-		top: 25%;
-		background-color: #900000;
-	}
-	40% {
-		background-color: #ff3b3b;
-		top: 35%;
-	}
-	41% {
-		top: 30%;
-		background-color: #b40008;
-	}
-	100% {
-		left: 70%;
-		background-color: #0F0F0F;
-	}
-
-}
-
-h1:active {
-	animation: shake 0.1s alternate;
+h1:hover {
+	color: #FF5D5D;
 }
 
 strong {
 	color: #7778;
-	font-size: 0.3em;
+	font-size: 0.2em;
 }
-@keyframes shake {
-	25% {
-		transform: rotate(25deg);
-	}
-	75% {
-		transform: rotate(-25deg);
-	}
 
-}
 
 @keyframes scan {
 	1% {
@@ -397,6 +343,7 @@ strong {
 
 .details p {
 	min-width: 200px;
+	padding: 20px 0;
 }
 
 .petContainer {
@@ -428,10 +375,12 @@ strong {
 .updateH3{
 	font-size: 0.9em;
 	line-height: 1.2;
+	padding: 5px 0;
 }
 li {
 	font-size: 0.7em;
 	line-height: 1.5;
+	padding: 2px 0;
 }
 
 
@@ -441,4 +390,8 @@ li {
 
 .gif:active {
 	transform: scale(1.1);
+}
+a img {
+	width: 280px;
+	height: 280px;
 }

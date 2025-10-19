@@ -4,11 +4,14 @@ const games = document.getElementById('games');
 const info = document.getElementById('info');
 const h2 = document.querySelector('.start');
 const h3 = document.getElementById('carge');
+const scroll = document.querySelector('html');
 const sonido = new Audio('PixelLabContent/audio/power.wav');
+const animation = sessionStorage.getItem('intro');
 
-
+if (!animation) {
+	
 button.addEventListener('click', function() {
-
+	sessionStorage.setItem('intro', 'true');
 	sonido.play();
 
 	start.style.backgroundColor = '#222';
@@ -27,6 +30,17 @@ button.addEventListener('click', function() {
 		start.style.display = 'none';
 		games.style.display = 'flex';
 		info.style.display = 'flex';
+		document.documentElement.style.scrollbarWidth = 'auto';
 }, 1500)
+
 	
 });
+
+
+}else {
+  // Saltar animación, mostrar contenido directamente
+  start.style.display = 'none';
+  games.style.display = 'flex';
+  info.style.display = 'flex';
+  document.documentElement.style.scrollbarWidth = 'auto';
+}
