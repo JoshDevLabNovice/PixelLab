@@ -1,5 +1,24 @@
 #Changelog - PixelLab
 
+## [V1.2.0] - 1/11/2025
+
+###Añadidos:
+
+-> Mini-juego "Snake v1.0.0"
+
+###Cambios:
+
+-> Tres en Raya v1.1.0:
+	- Se ha añadido animación para dar a conocer el ganador.
+	- Vibración para feedback.
+	- Se ha modificado levemente la paleta de colores en algunos elementos.
+
+###Arreglos:
+	
+-> Gear Catcher v1.0.1:
+	- Desplazamiento de engranajes y brazo mecánico ralentizados.
+
+
 ## [V1.1.0] - 19/10/2025
 
 ###Añadidos:

@@ -34,6 +34,11 @@ Se agregó una sección de updates para llevar control de cada versión tanto pa
 -> Puedes usar las flechas del teclado, o los botones de la pantalla para desplazarte.
 -> Si se te escapa un engranaje, pierdes.
 
+###Snake
+-> Panel de controles para jugar, o utiliza el teclado.
+-> Come manzanas para obtener puntos.
+-> Si chocas contra la pared o contra tí mismo, pierdes.
+
 
 ##Notas
 Este Mini Game Hub es un proyecto personal con el fin de aprender más acerca de JavaScript, y hacerlo de manera divertida utilizando pixel art para el diseño de cada juego.
