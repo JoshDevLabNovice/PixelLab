@@ -1,46 +1,47 @@
-#Changelog - PixelLab
+# Changelog - PixelLab
 
 ## [V1.2.0] - 1/11/2025
 
-###Añadidos:
+### Añadidos:
 
--> Mini-juego "Snake v1.0.0"
+- Mini-juego "Snake v1.0.0"
 
-###Cambios:
+### Cambios:
 
--> Tres en Raya v1.1.0:
+- Tres en Raya v1.1.0:
 	- Se ha añadido animación para dar a conocer el ganador.
 	- Vibración para feedback.
 	- Se ha modificado levemente la paleta de colores en algunos elementos.
 
-###Arreglos:
+### Arreglos:
 	
--> Gear Catcher v1.0.1:
+- Gear Catcher v1.0.1:
 	- Desplazamiento de engranajes y brazo mecánico ralentizados.
 
 
 ## [V1.1.0] - 19/10/2025
 
-###Añadidos:
+### Añadidos:
 
--> Mini-juego "Gear Catcher v1.0.0"
--> Se ha añadido un README y CHANGELOG
+- Mini-juego "Gear Catcher v1.0.0"
+- Se ha añadido un README y CHANGELOG
 
-###Cambios:
+### Cambios:
 
--> Mejoras de diseño en la página principal
--> Piedra, Papel o Tijera v1.1.0:
+- Mejoras de diseño en la página principal
+- Piedra, Papel o Tijera v1.1.0:
 	- Se ha añadido animación para dar a conocer el ganador.
 	- Vibración para feedback.
 	- Se ha mejorado el diseño de la ventana de ganador.
--> Whack-A-Mole v1.1.0:
+- Whack-A-Mole v1.1.0:
 	- Se han agregado animación y vibración al golpear.
 	- Rediseño del martillo.
 	- Detales en la ventana de resultados agregados.
 	- Se ha agregado dificultad, un punto menos por golpe fallado.
 	- Pixel extra de margen para los golpes.
 
-###Arreglos:
+### Arreglos:
 	
--> Al navegar de vuelta a la página de inicio, no se ejecuta la animación inicial.
--> Scroll corregido para celulares.
+- Al navegar de vuelta a la página de inicio, no se ejecuta la animación inicial.
+
+- Scroll corregido para celulares.
