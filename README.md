@@ -1,47 +1,52 @@
-#PixelLab
+# PixelLab
 ¡PixelLab te da la bienvenida!
 Mini-juegos con HTML, CSS y JavaScript, sin uso de librerías ni frameworks
 
-##¿Cómo acceder?
+## ¿Cómo acceder?
 Simplemente ingresa a este link: https://joshdevlabnovice.github.io/PixelLab/
 
-![Avatar](PixelLab/img/person.gif)
+<p align="center">
+  <img src="PixelLabContent/img/person.gif" alt="Avatar" width="300px" height="300px">
+</p>
 
 Encontrarás la descripción general con la versión, abajo de esto todos los mini-juegos disponibles.
 Una descripción específica del proyecto.
 Se agregó una sección de updates para llevar control de cada versión tanto para el desarrollador como para los visitantes del sitio.
 ##Juegos disponibles
 
-###Piedra, Papel o Tijeras
--> Elige cualquiera de las opciones disponibles.
--> Se seleccionará una opción al azar para competir contra el usuario (contra ti).
--> El ganador aparecrá en pantalla.
+### Piedra, Papel o Tijeras
+- Elige cualquiera de las opciones disponibles.
+- Se seleccionará una opción al azar para competir contra el usuario (contra ti).
+- El ganador aparecrá en pantalla.
 
 
-###Tres en Raya
--> Elige jugar con O o X.
--> Puedes jugar contra un amigo o contra el bot.
--> El bot eligirá casillas al azar, no dejes que te gane.
+### Tres en Raya
+- Elige jugar con O o X.
+- Puedes jugar contra un amigo o contra el bot.
+- El bot eligirá casillas al azar, no dejes que te gane.
+
+### Whack-A-Mole
+- Da click en el botón "iniciar" para poner en marcha el juego.
+- Para computadoras, usa el cursor para golpear los topos; para teléfonos, usa un dedo para golpearlos.
+- Golpea tantos como puedas en 1 minuto.
+
+### Gear Catcher
+- Click en el botón central para iniciar el juego
+- Puedes usar las flechas del teclado, o los botones de la pantalla para desplazarte.
+- Si se te escapa un engranaje, pierdes.
+
+### Snake
+- Panel de controles para jugar, o utiliza el teclado.
+- Come manzanas para obtener puntos.
+- Si chocas contra la pared o contra tí mismo, pierdes.
 
 
-###Whack-A-Mole
--> Da click en el botón "iniciar" para poner en marcha el juego.
--> Para computadoras, usa el cursor para golpear los topos; para teléfonos, usa un dedo para golpearlos.
--> Golpea tantos como puedas en 1 minuto.
-
-###Gear Catcher
--> Click en el botón central para iniciar el juego
--> Puedes usar las flechas del teclado, o los botones de la pantalla para desplazarte.
--> Si se te escapa un engranaje, pierdes.
-
-###Snake
--> Panel de controles para jugar, o utiliza el teclado.
--> Come manzanas para obtener puntos.
--> Si chocas contra la pared o contra tí mismo, pierdes.
-
-
-##Notas
+## Notas
 Este Mini Game Hub es un proyecto personal con el fin de aprender más acerca de JavaScript, y hacerlo de manera divertida utilizando pixel art para el diseño de cada juego.
 
+<p align="center">
+  <img src="PixelLabContent/img/pet.gif" alt="Avatar" width="300px" height="300px">
+</p>
+
+
 Más mini-juegos próximamente.
-![Pet](PixelLab/img/pet.gif)
