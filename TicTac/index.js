@@ -5,6 +5,8 @@ const background = document.getElementById('fondo')
 const h3 = document.getElementById('h3')
 const selection = new Audio('audio/select.wav');
 const finished = new Audio('audio/finish.wav');
+const roulette = new Audio('audio/roulette.wav');
+roulette.loop = true;
 /* posibles valores de victoria*/
 const victoria = [
 	[0, 1, 2],
@@ -41,6 +43,7 @@ let	valores = [
 const pX = document.getElementById('pX')
 const pO = document.getElementById('pO')
 const ventana1 = document.getElementById('ventana1')
+const eleccion = document.getElementById('eleccion')
 let isX = null
 
 pX.addEventListener('click', function () {
@@ -110,6 +113,7 @@ function sinBot() {
 				if (casillas[0].innerHTML != "" && casillas[1].innerHTML != "" && casillas[2].innerHTML != "" && casillas[3].innerHTML != "" && casillas[4].innerHTML != "" && casillas[5].innerHTML != "" && casillas[6].innerHTML != "" && casillas[7].innerHTML != "" && casillas[8].innerHTML != "" && h4.innerHTML == '') {
 				background.style.backgroundColor = "#8132"
 				h3.innerHTML = '<img src="img/x.png" style="margin: 0;"> Empate <img src="img/o.png" style="margin: 0;">';
+				navigator.vibrate(700);
 				finished.play();
 			}
 
@@ -174,6 +178,7 @@ function conBot() {
 
 
 	function jugar() {
+		
 		if (isX) {
 			if (this.innerHTML == "") {
 				this.innerHTML = '<img src="img/x.png">'
@@ -192,6 +197,16 @@ function conBot() {
 				evaluar()
 				}
 			}
+
+		if(!gameEnd) {
+			eleccion.style.display = 'flex';
+		roulette.play();
+		setTimeout(function() {
+			eleccion.style.display = 'none';
+			roulette.pause();
+			roulette.currentTime = 0;
+		}, 2000)
+	}
 	}
 
 	function evaluar() {
@@ -213,6 +228,7 @@ function conBot() {
 				finished.play();
 				gameEnd = true
 				background.style.backgroundColor = '#8132'
+				navigator.vibrate(700);
 				h4.innerHTML = `${jugadas[op1]} Felicidades!`
 				h3.innerHTML = "El ganador es: "
 				casillas.forEach(e => {
@@ -268,6 +284,7 @@ function conBot() {
 				
 				background.style.backgroundColor = '#8132'
 				h3.innerHTML = '<img src="img/x.png" style="margin: 0;"> Empate <img src="img/o.png" style="margin: 0;">'
+				navigator.vibrate(700);
 			}
 		
 	}
@@ -284,6 +301,7 @@ function conBot() {
 	})
 			ventana2.style.display = 'flex'
 			h3.innerText = 'El ganador es:'
+			navigator.vibrate(700);
 			h4.innerText = ''
 			gameEnd = false
 			location.reload()

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="PixelLab">
+    <meta name="description" content="Snake, movimiento en eje X e Y">
+    <link rel="icon" href="img/pet.png" type="image/x-icon">
+    <title>Snake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="layout">
+    <main id="main">
+        <h1>Snake<strong id="version">v1.0.0</strong></h1>
+        <h2>Puntos: <strong id="strong">0</strong></h2>
+    </main>
+    <section id="section1">
+                    <button id="start"><img src="img/start.png"></button>
+
+        <div id="container">
+            <canvas id="canvas" width="350px" height="350px"></canvas>
+        </div>
+    </section>
+    <section id="section2">
+  <button id="up" onclick="move('up')"><img src="img/up.png"></button>
+  <button id="left" onclick="move('left')"><img src="img/left.png"></button>
+  <button id="down" onclick="move('down')"><img src="img/down.png"></button>
+  <button id="right" onclick="move('right')"><img src="img/right.png"></button>
+    </section>
+    </div>
+    <footer id="footer">© PixelLab - Código puro para cada mini-juego</footer>
+    <script src="index.js"></script>
+</body>
+</html>

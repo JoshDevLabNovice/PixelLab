@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
       o.push(new Elemento(Math.random() * 250, 0));
     
      
-      const tiempo = parseInt(Math.random() * 1500) + 250;
+      const tiempo = parseInt(Math.random() * 1100) + 500;
       creacionTimeout = setTimeout(creacion, tiempo);
     }
     
@@ -168,14 +168,14 @@ document.addEventListener("DOMContentLoaded", () => {
         if (this.teclaIz == true) {
           this.frameCounter++;  
           if(this.frameCounter % 5 === 0) { 
-            this.x -= 15;                
+            this.x -= 12;                
           }
           if (this.x < 0) this.x = 0;
         }
         if (this.teclaDe == true) {
           this.frameCounter++;  
           if(this.frameCounter % 5 === 0) { 
-            this.x += 15;                
+            this.x += 12;                
           }
           if(this.x + this.w > canvas.width) {
             this.x = canvas.width - this.w;
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
         this.caer = function() {
           this.frameCounter++;       
           if(this.frameCounter % 5 === 0) { 
-            this.y += 20;   
+            this.y += 15;   
           }
           if(this.y + this.h > canvas.height) {
             this.activo = false;
@@ -216,6 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
             start.style.display = 'block';
             container.style.opacity = '0.7';
             finalizado = true;
+            navigator.vibrate(700);
             }
         }
         this.dibujo = function() {
@@ -239,6 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
         sonido.play();
         puntuacion++;
         strong.innerHTML = puntuacion;
+        navigator.vibrate(256);
         e.activo = false;
       }
     })}};
